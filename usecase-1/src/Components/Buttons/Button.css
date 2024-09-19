@@ -1,0 +1,26 @@
+#button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  font-family: "poppins";
+  font-weight: 600;
+  padding: 20px 23px;
+  height: 81px;
+}
+#clicked-button {
+  border: none;
+  background-color: #83a0ff;
+  border-radius: 10px;
+  font-size: 22px;
+  font-family: "poppins";
+  font-weight: 600;
+  padding: 20px 23px;
+  height: 81px;
+  color: white;
+}
+#button:hover {
+  box-shadow: 2px 2px 5px 0px rgba(152, 145, 245, 0.5);
+  font-size: 23px;
+}
