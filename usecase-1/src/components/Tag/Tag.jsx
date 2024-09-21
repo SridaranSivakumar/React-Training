@@ -1,7 +1,7 @@
 import React from "react";
-import "./TagContent.css";
+import "./Tag.css";
 
-export default function CardsContent({ Tags }) {
+export default function Tag({ Tags }) {
   return (
     <div id="tag-container">
       {Tags.map((items, i) => (

@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../Components/Header/Header";
+import Header from "../../components/Header/Header";
 import "./HomePage.css";
-import Cards from "../../Components/Cards/Cards";
+import Card from "../../components/Card/Card";
 import data from "../../data.js";
 // Importing Header and Cards Component
 export default function HomePage() {
@@ -10,7 +10,7 @@ export default function HomePage() {
       <Header />
       <div id="cards-container">
         {data.map((user, i) => (
-          <Cards user={user} key={i} />
+          <Card user={user} key={i} />
         ))}
         {/* Passing User data to Cards */}
       </div>

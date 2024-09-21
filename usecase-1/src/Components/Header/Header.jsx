@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "../Buttons/Button";
+import Button from "../Button/Button";
 import "./Header.css";
-import Search from "../../Asset/search.png";
+import Search from "../../assets/search.png";
 const buttons = ["Reputation", "New users", "Voters", "Editors", "Moderators"];
 // Button Names stored in a array
 export default function Header() {
