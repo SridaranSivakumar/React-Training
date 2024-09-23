@@ -1,13 +1,4 @@
-#tag-container {
-  width: 250px;
-  max-height: 130px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: scroll;
-}
-#tag-content {
+.tag-content {
   width: fit-content;
   height: fit-content;
   border: 1px solid #bfc8e4;

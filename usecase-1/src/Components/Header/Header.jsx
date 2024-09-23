@@ -8,26 +8,17 @@ export default function Header() {
   const [selectedBtn, setSelectedBtn] = useState(1);
   // Using state to set the active button in navbar
   return (
-    <div id="header-container">
+    <div className="header-container">
       <header>Users</header>
-      <div id="navbar">
-        <div id="search-box">
-          <img id="search-image" src={Search} alt="Search" />
-          <div id="searchbox-content">
-            <input
-              type="search"
-              name="input-box"
-              id="input-box"
-              placeholder="Search users"
-            />
+      <div className="navbar">
+        <div className="search-box">
+          <img className="search-image" src={Search} alt="Search" />
+          <div className="searchbox-content">
+            <input type="search" name="input-box" className="input-box" placeholder="Search users"/>
           </div>
         </div>
-        <div id="button-container">
-          <Button
-            buttons={buttons}
-            selectedBtn={selectedBtn}
-            setSelectedBtn={setSelectedBtn}
-          />
+        <div className="button-container">
+          <Button buttons={buttons} selectedBtn={selectedBtn} setSelectedBtn={setSelectedBtn}/>
           {/* Passing button names and default selected button as a prop to button component */}
         </div>
       </div>

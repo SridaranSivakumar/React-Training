@@ -1,0 +1,8 @@
+.cards-container{
+    margin-top:101px ;
+    margin-left: 147px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    display:flex;
+}

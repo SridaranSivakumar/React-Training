@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import React from "react";
 import "./Button.css";
 
@@ -6,7 +5,7 @@ export default function Button({ buttons, selectedBtn, setSelectedBtn }) {
   return buttons.map((buttonName, index) => {
     return (
       <button
-        id={selectedBtn === index ? "clicked-button" : "button"}
+      className={selectedBtn === index ? "clicked-button" : "button"}
         onClick={() => setSelectedBtn(index)}
         key={index}
       >

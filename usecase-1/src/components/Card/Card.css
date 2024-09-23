@@ -1,4 +1,4 @@
-#card {
+.card {
   width: 460px;
   height: 295px;
   background-color: #fbfcff;
@@ -7,16 +7,16 @@
   display: flex;
   border-radius: 15px;
 }
-#card-name {
+.card-name {
   font-size: 30px;
   font-family: "Merriweather", serif;
 }
-#location-name {
+.location-name {
   font-size: 20px;
   padding-top: 5px;
   font-family: "poppins";
 }
-#card img {
+.card img {
   width: 140px;
   height: 141px;
   border-radius: 70px;
@@ -25,12 +25,12 @@
   object-fit: cover;
   object-position: center;
 }
-#card-content {
+.card-content {
   margin-top: 71px;
   margin-left: 24px;
   font-family: "poppins";
   font-weight: 600;
 }
-#card:hover {
+.card:hover {
   border: 1px solid #bec7e5;
 }
