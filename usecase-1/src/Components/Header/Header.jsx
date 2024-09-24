@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import Button from "../Button/Button";
 import "./Header.css";
 import Search from "../../assets/search.png";
-const buttons = ["Reputation", "New users", "Voters", "Editors", "Moderators"];
-// Button Names stored in a array
+import data from "../../data.js";
+
+/* Header component cotains the header and navbar.
+   The navbar contains the search box and the buttons.
+   For button component we are passing button names and default selected button as props. 
+   The button names are stored in data.js file. */
 export default function Header() {
   const [selectedBtn, setSelectedBtn] = useState(1);
   // Using state to set the active button in navbar
@@ -18,8 +22,7 @@ export default function Header() {
           </div>
         </div>
         <div className="button-container">
-          <Button buttons={buttons} selectedBtn={selectedBtn} setSelectedBtn={setSelectedBtn}/>
-          {/* Passing button names and default selected button as a prop to button component */}
+          <Button buttons={data} selectedBtn={selectedBtn} setSelectedBtn={setSelectedBtn}/>
         </div>
       </div>
     </div>

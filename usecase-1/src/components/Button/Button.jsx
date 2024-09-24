@@ -1,8 +1,10 @@
 import React from "react";
 import "./Button.css";
 
+/*Button component get buttons , selectedBtn as props and using the state 
+indicating the active status of the button when the button is clicked. */
 export default function Button({ buttons, selectedBtn, setSelectedBtn }) {
-  return buttons.map((buttonName, index) => {
+  return buttons.button.map((buttonName, index) => {
     return (
       <button
       className={selectedBtn === index ? "clicked-button" : "button"}
@@ -11,7 +13,7 @@ export default function Button({ buttons, selectedBtn, setSelectedBtn }) {
       >
         {buttonName}
       </button>
-      //  This is the Button component and the state is used to change the selected button style when button is clicked.
+    
     );
   });
 }

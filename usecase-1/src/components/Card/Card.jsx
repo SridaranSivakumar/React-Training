@@ -2,8 +2,9 @@ import React from "react";
 import "./Card.css";
 import TagsContainer from "../TagsContainer/TagsContainer.jsx";
 
+// Cards component display the details of the user and the user data is get from props . 
+// Passing the tags data to TagsContainer as props
 export default function Cards({ user }) {
-  // Destructuring the user data which is passed as a prop
   const url = require("../../assets/" + user.Name + ".jpg");
   //   Path of the images are set using the url variable
   return (
@@ -14,7 +15,6 @@ export default function Cards({ user }) {
         <div className="location-name">{user.Location}</div>
         <div>
           <TagsContainer Tags={user.Tags} />
-          {/* The array of tags is passed TagContainer */}
         </div>
       </div>
     </div>

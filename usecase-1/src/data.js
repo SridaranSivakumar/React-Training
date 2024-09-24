@@ -29,7 +29,8 @@ var data = {"Users":[
         "Name" : "Anthony S. Morin",
         "Location" : "Lyndhurst, NJ",
         "Tags" : ['vintage','electric']
-    }
+    }],
+    "button": ["Reputation", "New users", "Voters", "Editors", "Moderators"],
     
-]};
+};
 export default data;
