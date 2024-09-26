@@ -8,9 +8,10 @@ import data from "../../data.js";
 // In the cardscontainer component passing users data as props.
 export default function HomePage() {
   return (
-    <div>
+    <>
     <Header />
     <CardContainer data={data}/>
-    </div>
+    </>
+    
   );
 }

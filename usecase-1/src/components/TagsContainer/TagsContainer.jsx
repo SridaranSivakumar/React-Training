@@ -6,7 +6,9 @@ import Tag from "../../components/Tag/Tag.jsx";
 export default function TagsContainer({ Tags }) {
   return (
     <div className="tag-container">
-      <Tag Tags={Tags}/>
+      {Tags.map((tag, index) => (
+         <Tag Tag={tag} key={index} />
+        ))}
     </div>
   );
 }

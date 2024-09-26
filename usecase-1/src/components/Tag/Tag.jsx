@@ -2,10 +2,8 @@ import React from "react";
 import "./Tag.css";
 
 // Tag componet display the tags for a user
-export default function Tag({ Tags }) {
+export default function Tag({Tag}) {
   return (
-    Tags.map((items, index) => (
-        <div className="tag-content" key={index}> {items} </div>
-      ))
+        <div className="tag-content" > {Tag} </div> 
   );
 }

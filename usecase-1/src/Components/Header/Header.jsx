@@ -12,9 +12,9 @@ export default function Header() {
   const [selectedBtn, setSelectedBtn] = useState(1);
   // Using state to set the active button in navbar
   return (
-    <div className="header-container">
-      <header>Users</header>
-      <div className="navbar">
+    <header className="header-container">
+      <b className="header-content">Users</b>
+      <navbar>
         <div className="search-box">
           <img className="search-image" src={Search} alt="Search" />
           <div className="searchbox-content">
@@ -24,7 +24,7 @@ export default function Header() {
         <div className="button-container">
           <Button buttons={data} selectedBtn={selectedBtn} setSelectedBtn={setSelectedBtn}/>
         </div>
-      </div>
-    </div>
+      </navbar>
+    </header>
   );
 }

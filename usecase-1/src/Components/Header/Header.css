@@ -1,15 +1,15 @@
-.header-container {
+header {
   margin-left: 150px;
   margin-top: 147px;
 }
-.header-container header {
+.header-content{
   font-style: bold;
   font-size: 50px;
   font-family: "Merriweather", serif;
   font-weight: 800;
 }
 
-.navbar {
+navbar {
   padding-top: 38px;
   max-height: 300px;
   box-sizing: border-box;
@@ -27,11 +27,11 @@
 .search-image {
   padding-left: 24px;
   padding-top: 28px;
-  width: 41px;
-  height: 43px;
+  width: 35px;
+  height: 35px;
 }
 .searchbox-content {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 20px;
 }
 .button-container {
